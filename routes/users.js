@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const joi = require("@hapi/joi");
-const { model, models } = require("mongoose");
+//const { model, models } = require("mongoose");
 const models = require("../models/users");
 
 router.post("/login", async (req, res) => {
@@ -36,7 +36,7 @@ router.post("/signup", async (req, res) => {
     try {
         const schema = joi.object().keys({
             name: joi.string().min(3).max(45).required(),
-            email: joi.email().required();
+            email: joi.string().email().required(),
             password: joi.string().min(6).max(20).required()
         });
         const result = schema.validate(req.body);

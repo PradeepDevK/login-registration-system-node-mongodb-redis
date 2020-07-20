@@ -53,7 +53,7 @@ app.engine("html", require('ejs').renderFile);
 
 //routes
 app.use("/", require('./routes/static'));
-app.unsubscribe("/users", require('./routes/users'));
+app.use("/users", require('./routes/users'));
 
 //start the app
 app.listen(nconf.get("port") || 3000);
