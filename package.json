@@ -1,0 +1,31 @@
+{
+  "name": "login-registration-system-node-mongodb-redis",
+  "version": "1.0.0",
+  "description": "Login registration system with node, mongodb and redis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PradeepDevK/login-registration-system-node-mongodb-redis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PradeepDevK/login-registration-system-node-mongodb-redis/issues"
+  },
+  "homepage": "https://github.com/PradeepDevK/login-registration-system-node-mongodb-redis#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "connect-redis": "^5.0.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.9.25",
+    "nconf": "^0.10.0",
+    "redis": "^3.0.2"
+  }
+}
