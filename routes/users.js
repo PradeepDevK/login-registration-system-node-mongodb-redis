@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const joi = require("@hapi/joi");
 const { model, models } = require("mongoose");
-//const models = require("../models/users");
+const models = require("../models/users");
 
 router.post("/login", async (req, res) => {
     try {
